@@ -29,15 +29,16 @@ if (isset($_POST['search'])) {
             text-align: center;
         }
         a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: inline-block;
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
         }
+
         a:hover {
-            color: #45a049;
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
         }
+
         table {
             width: 100%;
             border-collapse: collapse;

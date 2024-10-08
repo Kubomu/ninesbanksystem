@@ -28,9 +28,10 @@ if (!$result) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Light grey background */
-            color: #333; /* Dark text color */
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f4f4f4 30%, #e9ecef 100%);
+            color: #2c3e50;
+            margin: 0;
             padding: 20px;
         }
 
@@ -105,6 +106,9 @@ if (!$result) {
         .add-btn:hover {
             background-color: #45a049; /* Darker green on hover */
         }
+
+        
+
     </style>
 </head>
 <body>

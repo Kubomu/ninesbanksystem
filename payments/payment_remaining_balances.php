@@ -75,6 +75,18 @@ $result = $conn->query($sql);
         tr:hover {
             background-color: #f1f1f1; /* Light grey on row hover */
         }
+
+        a {
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
     </style>
 </head>
 <body>

@@ -76,15 +76,18 @@ $result = $conn->query($sql);
             background-color: #45a049; /* Darker green on hover */
         }
 
-        .breadcrumbs {
-            margin-bottom: 20px;
-            font-size: 14px;
+
+        a {
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
         }
 
-        .breadcrumbs a {
-            text-decoration: none;
-            color: #2c3e50;
+        a:hover {
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
         }
+
     </style>
     <script>
         function confirmTransfer(event) {

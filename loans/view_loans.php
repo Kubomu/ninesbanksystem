@@ -42,9 +42,9 @@ if (!$result) {
 
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Light grey background */
-            color: #333; /* Dark text color */
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f4f4f4 30%, #e9ecef 100%);
+            color: #2c3e50;
             margin: 0;
             padding: 20px;
         }
@@ -103,18 +103,17 @@ if (!$result) {
             background-color: #45a049;
         }
 
-        .breadcrumbs {
-            margin-bottom: 20px;
+        a {
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
         }
 
-        .breadcrumbs a {
-            text-decoration: none;
-            color: #4CAF50; /* Green color for links */
+        a:hover {
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
         }
 
-        .breadcrumbs a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>

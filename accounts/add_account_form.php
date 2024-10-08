@@ -88,6 +88,18 @@ if ($maxAccountNumber) {
         select {
             background-color: #fff; /* White background for dropdown */
         }
+
+        a {
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
     </style>
     <script>
         function validateAccountNumber() {

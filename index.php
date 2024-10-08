@@ -170,7 +170,7 @@ $currentDateTime = date('Y-m-d H:i:s');
             <ul>
                 <li><a href="payments/payment_remaining_balances.php"><i class="fas fa-dollar-sign"></i>View Payments</a></li>
                 <li><a href="payments/payment_form.php"><i class="fas fa-plus-circle"></i>Add Payment</a></li>
-                <li><a href="transactions/view_balances.php"><i class="fas fa-wallet"></i>View Balances</a></li>
+                
             </ul>
 
         <?php } elseif ($role == 'Teller') { ?>

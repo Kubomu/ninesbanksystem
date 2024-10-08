@@ -46,9 +46,9 @@ if ($chart_result->num_rows > 0) {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f4f4f4 30%, #e9ecef 100%);
+            color: #2c3e50;
             margin: 0;
             padding: 20px;
         }
@@ -60,13 +60,16 @@ if ($chart_result->num_rows > 0) {
         }
 
         a {
-            color: #4CAF50;
-            text-decoration: none;
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
         }
+
 
         table {
             width: 100%;

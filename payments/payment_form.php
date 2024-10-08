@@ -82,12 +82,23 @@ $result = $conn->query($sql);
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        a {
+            color: #4CAF50; /* Primary green color for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f44336; /* Change color to secondary red on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
     </style>
     
 </head>
 
 <body>
-
 
     <div class="breadcrumbs">
         <a href="../index.php">Dashboard</a> > <a href="payment_form.php">Payment Form</a>
