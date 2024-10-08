@@ -46,10 +46,10 @@ Welcome to **Nines Bank System**, a comprehensive banking management solution de
 
  ## Usage
  
-**Admin**: Manage the entire banking system, including users, transactions, and loans.
-**Teller**: Manage customer and account creation, along with basic transactions.
-**Loan Officer**: Handle loan applications and payments.
-**Logging In**: You can log in with different roles (Admin, Teller, Loan Officer) to access different features.
+- **Admin**: Manage the entire banking system, including users, transactions, and loans.
+- **Teller**: Manage customer and account creation, along with basic transactions.
+- **Loan Officer**: Handle loan applications and payments.
+- **Logging In**: You can log in with different roles (Admin, Teller, Loan Officer) to access different features.
 
 
 
