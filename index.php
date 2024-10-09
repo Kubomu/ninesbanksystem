@@ -136,6 +136,7 @@ $currentDateTime = date('Y-m-d H:i:s');
 
     <div class="user-info">
         <p>Logged in as: <strong><?php echo htmlspecialchars($username); ?></strong></p>
+        <p>Session Counter: <strong><?php echo $counter; ?></strong></p>
     </div>
     <nav>
         <?php if ($role == 'Admin') { ?>
@@ -170,7 +171,6 @@ $currentDateTime = date('Y-m-d H:i:s');
             <ul>
                 <li><a href="payments/payment_remaining_balances.php"><i class="fas fa-dollar-sign"></i>View Payments</a></li>
                 <li><a href="payments/payment_form.php"><i class="fas fa-plus-circle"></i>Add Payment</a></li>
-                
             </ul>
 
         <?php } elseif ($role == 'Teller') { ?>
@@ -178,7 +178,6 @@ $currentDateTime = date('Y-m-d H:i:s');
             <ul>
                 <li><a href="customers/add_customer_form.php"><i class="fas fa-user-plus"></i>Add Customer</a></li>
                 <li><a href="accounts/add_account_form.php"><i class="fas fa-plus"></i>Add Account</a></li>
-                
                 <li><a href="customers/view_customers.php"><i class="fas fa-address-card"></i>View Customers</a></li>
                 <li><a href="accounts/view_accounts.php"><i class="fas fa-users"></i>View Accounts</a></li>
             </ul>
@@ -207,33 +206,24 @@ $currentDateTime = date('Y-m-d H:i:s');
             </ul>
             <h2>Payments</h2>
             <ul>
-                
                 <li><a href="payments/payment_form.php"><i class="fas fa-plus-circle"></i>Add Payment</a></li>
                 <li><a href="payments/payment_remaining_balances.php"><i class="fas fa-dollar-sign"></i>View Payments</a></li>
-                
             </ul>
-
-        <?php } else { ?>
-            <p>You do not have access to this dashboard.</p>
         <?php } ?>
+
+        <div class="logout">
+            <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
     </nav>
 
-    <div class="logout">
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
-    </div>
-
     <script>
+        // Display current date and time
         function updateDateTime() {
             const now = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-            const dateString = now.toLocaleDateString(undefined, options);
-            const timeString = now.toLocaleTimeString();
-            document.getElementById('currentDateTime').innerText = `${dateString}, ${timeString}`;
+            document.getElementById("currentDateTime").innerText = now.toLocaleString();
         }
-
-        // Update the date and time every second
         setInterval(updateDateTime, 1000);
-        updateDateTime(); // Initial call
+        updateDateTime();
     </script>
 </body>
 </html>
