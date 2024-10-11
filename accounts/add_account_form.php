@@ -1,5 +1,5 @@
 <?php
-include '../db_connect.php';   // Enables interaction with the 
+include '../db_connect.php';   // Enables interaction with the database
 
 
 // Fetch all customers to populate the customer dropdown
