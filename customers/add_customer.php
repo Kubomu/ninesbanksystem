@@ -1,6 +1,5 @@
 <?php
 include '../db_connect.php'; // Include the database connection
-
 // Sample data for a new customer (this will be changed to form input later)
 $first_name = 'John';
 $last_name = 'Doe';
@@ -31,4 +30,4 @@ if ($stmt->execute()) {
 // Close the statement and connection
 $stmt->close();
 $conn->close();
-?>
+

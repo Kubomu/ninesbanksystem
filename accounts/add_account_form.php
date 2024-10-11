@@ -16,7 +16,7 @@ if ($maxAccountNumber) {
     // Increment the max account number
     $newAccountNumber = str_pad((int)$maxAccountNumber + 2, 10, '0', STR_PAD_LEFT);
 } else {
-    // Start from 0000000001 if there are no accounts
+    // Start from 0210820000  if there are no accounts
     $newAccountNumber = '0210820000';
 }
 ?>
