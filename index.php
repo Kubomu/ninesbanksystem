@@ -142,7 +142,7 @@ $currentDateTime = date('Y-m-d H:i:s');
         <?php if ($role == 'Admin') { ?>
             <h2>Admin</h2>
             <ul>
-                <li><a href="admin/manage_admins.php"><i class="fas fa-cogs"></i>Manage Admins</a></li>
+                <li><a href="admin/manage_admins.php"><i class="fas fa-cogs"></i>Manage Users</a></li>
             </ul>
             <h2>Customers</h2>
             <ul>
