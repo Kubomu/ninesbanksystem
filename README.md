@@ -1,5 +1,5 @@
 # Nines Bank System
-
+For Study purposes only!!!!
 Welcome to **Nines Bank System**, a comprehensive banking management solution designed for administrators, tellers, and loan officers. This system supports multiple roles and features to manage customer accounts, transactions, loans, and payments efficiently.
 
 ## Table of Contents
