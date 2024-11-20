@@ -59,22 +59,24 @@ Welcome to **Nines Bank System**, a comprehensive banking management solution de
 ## Screenshots
 
 1. **Login Page**
-   ![Login Page](Screenshots/login_page.png)
+   ![Login Page](Screenshots/login.png)
 
 2. **Admin Dashboard**
-   ![Admin Dashboard](Screenshots/admin_dashboard.png)
+   ![Admin Dashboard](Screenshots/admin.png)
 
 3. **Teller Dashboard**
-   ![Teller Dashboard](Screenshots/teller_dashboard.png)
+   ![Teller Dashboard](Screenshots/teller.png)
 
 4. **Loan Officer Dashboard**
-   ![Loan Officer Dashboard](Screenshots/loan_officer_dashboard.png)
+   ![Loan Officer Dashboard](Screenshots/loan.png)
 
 5. **Transaction Management**
-   ![Transaction Management](Screenshots/transaction_management.png)
+   ![Transaction Management](Screenshots/transfer_funds.png)
 
-6. **Error Page (Deposit Feature)**
-   ![Error Page](Screenshots/error_page_deposit.png)
+5. **Loans**
+   ![Loans](Screenshots/view_loans.png)
+
+
 
    **Note:** Deposit functionality added but currently non-functional due to time constraints and prioritization of critical banking features.
 
