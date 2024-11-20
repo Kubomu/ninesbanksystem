@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 
 // Fetch account types for the pie chart
 $chart_sql = "SELECT account_type, COUNT(*) as count FROM accounts GROUP BY account_type";
-$chart_result = $conn->query($chart_sql);
+$chart_result = $conn->query($chart_sql); 
 
 // Prepare data for Chart.js
 $account_types = [];
