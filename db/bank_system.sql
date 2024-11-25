@@ -52,15 +52,18 @@ CREATE TABLE `customers` (
 
 -- Table structure for `loans`
 CREATE TABLE `loans` (
-  `loan_id` INT NOT NULL AUTO_INCREMENT,
-  `customer_id` INT DEFAULT NULL,
-  `loan_amount` DECIMAL(15,2) NOT NULL,
-  `loan_date` DATE DEFAULT NULL,
-  `repayment_date` DATE DEFAULT NULL,
-  `status` ENUM('Approved','Pending','Rejected') DEFAULT 'Pending',
+  `loan_id` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int DEFAULT NULL,
+  `loan_type` enum('Personal','Mortgage','Auto','Education') NOT NULL,
+  `loan_amount` decimal(10,2) DEFAULT NULL,
+  `loan_start_date` date DEFAULT NULL,
+  `interest_rate` decimal(5,2) DEFAULT NULL,
+  `loan_status` enum('Pending','Approved','Paid Off') DEFAULT 'Pending',
+  `total_amount_payable` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`loan_id`),
-  KEY `fk_loans_customer` (`customer_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `customer_id` (`customer_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 -- --------------------------------------------------------
 CREATE TABLE `payments` (
