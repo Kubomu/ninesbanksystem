@@ -76,21 +76,6 @@ CREATE TABLE `payments` (
   KEY `loan_id` (`loan_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Sample data for `accounts`
-INSERT INTO `accounts` (`account_id`, `customer_id`, `account_number`, `account_balance`, `account_open_date`, `status`, `account_type`) VALUES
-(1, 1, '000123456789', 1000.00, '2024-01-01', 'Active', 'Savings');
-
--- Sample data for `admins`
-INSERT INTO `admins` (`admin_id`, `username`, `password`, `role`) VALUES
-(1, 'admin', '$2y$10$adminhashedpassword', 'Admin');
-
--- Sample data for `customers`
-INSERT INTO `customers` (`customer_id`, `first_name`, `last_name`, `gender`, `email`, `phone_number`, `address`, `date_of_birth`, `account_type`) VALUES
-(1, 'John', 'Doe', 'Male', 'john.doe@example.com', '1234567890', '123 Main St', '1990-01-01', 'Savings');
-
--- Sample data for `loans`
-INSERT INTO `loans` (`loan_id`, `customer_id`, `loan_amount`, `loan_date`, `repayment_date`, `status`) VALUES
-(1, 1, 5000.00, '2024-06-01', '2024-12-01', 'Approved');
 
 -- Add foreign keys
 ALTER TABLE `accounts`
