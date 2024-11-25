@@ -63,6 +63,15 @@ CREATE TABLE `loans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
+CREATE TABLE `payments` (
+  `payment_id` int NOT NULL AUTO_INCREMENT,
+  `loan_id` int DEFAULT NULL,
+  `payment_date` date DEFAULT NULL,
+  `payment_amount` decimal(10,2) DEFAULT NULL,
+  `remaining_balance` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`payment_id`),
+  KEY `loan_id` (`loan_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Sample data for `accounts`
 INSERT INTO `accounts` (`account_id`, `customer_id`, `account_number`, `account_balance`, `account_open_date`, `status`, `account_type`) VALUES
