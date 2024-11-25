@@ -96,7 +96,6 @@
                 <option value="+1">USA (+1)</option>
                 <option value="+44">UK (+44)</option>
                 <option value="+256">Uganda (+256)</option>
-                <!-- Add more country codes as needed -->
             </select>
             <input type="text" id="phone_number" name="phone_number" required placeholder="Phone number">
         </div>

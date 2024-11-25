@@ -118,7 +118,7 @@ $conn->close();
         <input type="text" id="role" name="role" value="<?php echo $admin['role']; ?>" required>
 
         <input type="submit" name="submit" value="Update Admin">
-        <a href="admin_management.php" class="cancel">Cancel</a>
+        <a href="manage_admins.php" class="cancel">Cancel</a>
     </form>
 </body>
 </html>
